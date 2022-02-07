@@ -16,7 +16,12 @@ export default function Home() {
   const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
 
   useEffect(() => {
-    console.log('myNewRef', myNewRef.current)
+    // console.log('myNewRef', myNewRef.current);
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      console.log('entry', entry);
+    })
+    return () => observer.observe(myNewRef.current);
   }, [])
   
   return (
