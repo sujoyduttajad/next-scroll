@@ -11,12 +11,12 @@ import styles from '../src/styles/Home.module.scss'
 
 export default function Home() {
 
-  const myRef = useRef();
-  // const { ref: myRef, inView: myElementIsVisible } = useInView();
-  // const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
+  const myNewRef = useRef();
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
 
   useEffect(() => {
-    console.log('myRef', myRef.current)
+    console.log('myNewRef', myNewRef.current)
   }, [])
   
   return (
@@ -127,7 +127,7 @@ export default function Home() {
 
       <Section backgroundColor="secondary">
         <Container>
-          <h2 ref={myRef} className={styles.heading}>
+          <h2 ref={myNewRef} className={styles.heading}>
             Have you scrolled down here yet? 🧐
           </h2>
 
