@@ -61,32 +61,6 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section backgroundColor="primary">
-        <Container>
-          <h2 className={styles.heading}>
-            Courses
-          </h2>
-
-          <ul className={styles.posts}>
-            <li>
-              <a href="https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap">
-                Create an eCommerce Store with Next.js and Stripe Checkout
-              </a>
-            </li>
-            <li>
-              <a href="https://spacejelly.dev/levelupecommerce">
-                Ecommerce on the Jamstack
-              </a>
-            </li>
-            <li>
-              <a href="https://fromdesignto.dev/">
-                From Design to Development
-              </a>
-            </li>
-          </ul>
-        </Container>
-      </Section>
-
       <Section backgroundColor="secondary">
         <Container>
           <h2 className={styles.heading}>
@@ -110,7 +84,7 @@ export default function Home() {
       <Section backgroundColor="primary">
         <Container>
           <h2 ref={magicSectionRef} className={styles.heading}>
-            Magic 🪄
+            Magic 🎆
           </h2>
 
           <p>
@@ -131,15 +105,6 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section>
-        <Container>
-          <h2 className={styles.heading}>
-            Call to Action
-          </h2>
-
-          <p>Sign up now!</p>
-        </Container>
-      </Section>
     </Layout>
   )
 }
