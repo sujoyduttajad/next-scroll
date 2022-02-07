@@ -2,12 +2,12 @@ import React, { useRef, useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Head from 'next/head'
 
-import Layout from '@components/Layout';
-import Section from '@components/Section';
-import Container from '@components/Container';
-import Button from '@components/Button';
+import Layout from '../src/components/Layout';
+import Section from '../src/components/Section';
+import Container from '../src/components/Container';
+import Button from '../src/components/Button';
 
-import styles from '@styles/Home.module.scss'
+import styles from '../src/styles/Home.module.scss'
 
 export default function Home() {
 
