@@ -11,18 +11,9 @@ import styles from '../src/styles/Home.module.scss'
 
 export default function Home() {
 
-  const myNewRef = useRef();
+ 
   const { ref: myRef, inView: myElementIsVisible } = useInView();
   const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
-
-  useEffect(() => {
-    // console.log('myNewRef', myNewRef.current);
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      console.log('entry', entry);
-    })
-    return () => observer.observe(myNewRef.current);
-  }, [])
   
   return (
     <Layout>
@@ -132,7 +123,7 @@ export default function Home() {
 
       <Section backgroundColor="secondary">
         <Container>
-          <h2 ref={myNewRef} className={styles.heading}>
+          <h2 ref={myRef} className={styles.heading}>
             Have you scrolled down here yet? 🧐
           </h2>
 
